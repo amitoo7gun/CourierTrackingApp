@@ -1,0 +1,150 @@
+  <!-- Master layout. -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<LinearLayout
+    android:gravity="center_vertical"
+    android:layout_gravity="left"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:layout_gravity="center_horizontal">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:id="@+id/ParcelimageView"
+        android:scaleType="center"
+        android:src="@drawable/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/detail_date_textview"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_gravity="start"
+        android:layout_width="wrap_content"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:text="Parcel date"
+        />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:layout_gravity="right">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/detail_parcelname_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="match_parent"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:text="Parcel name"
+            />
+            <TextView
+            android:id="@+id/detail_parcelcategory_textview"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/detail_parcelname_textview"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_width="wrap_content"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:text="Cctegory"
+            />
+            <TextView
+                android:id="@+id/detail_parcelprice_textview"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_parcelname_textview"
+                android:layout_toLeftOf="@+id/detail_parcelcategory_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Price"
+                />
+
+            <TextView
+                android:id="@+id/detail_parcelweight_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/detail_parcelcategory_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Weight"
+                />
+            <TextView
+                android:id="@+id/detail_parcelquantity_textview"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_parcelcategory_textview"
+                android:layout_toLeftOf="@+id/detail_parcelweight_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Quantity"
+                />
+            <TextView
+                android:id="@+id/detail_parcelphone_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/detail_parcelweight_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Phone"
+                />
+            <TextView
+                android:id="@+id/detail_parcelColor_textview"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_parcelweight_textview"
+                android:layout_toLeftOf="@+id/detail_parcelphone_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Color"
+                />
+
+            <TextView
+                android:id="@+id/detail_lat_textview"
+
+                android:layout_below="@+id/detail_parcelphone_textview"
+                android:layout_alignParentLeft="true"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Color"
+                />
+
+            <TextView
+                android:id="@+id/detail_long_textview"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/detail_parcelColor_textview"
+                android:layout_toLeftOf="@+id/detail_lat_textview"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:layout_width="wrap_content"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:text="Color"
+                />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
